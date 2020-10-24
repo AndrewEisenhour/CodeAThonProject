@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/firstToFifth"
+            app:destination="@id/fifthFragment3" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -51,6 +54,45 @@
             app:destination="@id/thirdFragment" />
         <action
             android:id="@+id/fourthToHome"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthFragment"
+        android:name="com.example.test.SixthFragment"
+        android:label="fragment_sixth"
+        tools:layout="@layout/fragment_sixth" >
+        <action
+            android:id="@+id/sixthToSeventh"
+            app:destination="@id/seventhFragment" />
+        <action
+            android:id="@+id/sixthToSeventh2"
+            app:destination="@id/fifthFragment3" />
+        <action
+            android:id="@+id/sixthToFirst"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthFragment3"
+        android:name="com.example.test.FifthFragment"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" >
+        <action
+            android:id="@+id/fifthToSixth"
+            app:destination="@id/sixthFragment" />
+        <action
+            android:id="@+id/fifthToFirst"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhFragment"
+        android:name="com.example.test.SeventhFragment"
+        android:label="fragment_seventh"
+        tools:layout="@layout/fragment_seventh" >
+        <action
+            android:id="@+id/seventhToSixth"
+            app:destination="@id/sixthFragment" />
+        <action
+            android:id="@+id/seventhToFirst"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
