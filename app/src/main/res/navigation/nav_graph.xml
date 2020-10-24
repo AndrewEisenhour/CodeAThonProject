@@ -174,7 +174,7 @@
         android:id="@+id/tipsFragment"
         android:name="com.example.test.TipsFragment"
         android:label="fragment_tips2"
-        tools:layout="@layout/fragment_tips2" >
+        tools:layout="@layout/fragment_tips" >
         <action
             android:id="@+id/tipsToFirst2"
             app:destination="@id/FirstFragment" />

@@ -32,8 +32,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Screen 8"
+        android:text="Gather Ingredient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
