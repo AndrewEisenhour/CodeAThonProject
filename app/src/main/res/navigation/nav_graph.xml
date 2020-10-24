@@ -17,6 +17,9 @@
         <action
             android:id="@+id/firstToFifth"
             app:destination="@id/fifthFragment3" />
+        <action
+            android:id="@+id/firstToEighth"
+            app:destination="@id/eighthFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -94,5 +97,71 @@
         <action
             android:id="@+id/seventhToFirst"
             app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eighthFragment"
+        android:name="com.example.test.EighthFragment"
+        android:label="fragment_eighth"
+        tools:layout="@layout/fragment_eighth" >
+        <action
+            android:id="@+id/eighthToNinth"
+            app:destination="@id/ninthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ninthFragment"
+        android:name="com.example.test.NinthFragment"
+        android:label="fragment_ninth"
+        tools:layout="@layout/fragment_ninth" >
+        <action
+            android:id="@+id/ninthToTenth"
+            app:destination="@id/tenthFragment" />
+        <action
+            android:id="@+id/ninthToEighth"
+            app:destination="@id/eighthFragment" />
+        <action
+            android:id="@+id/ninthToFirst"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenthFragment"
+        android:name="com.example.test.TenthFragment"
+        android:label="fragment_tenth"
+        tools:layout="@layout/fragment_tenth" >
+        <action
+            android:id="@+id/tenthToEleventh"
+            app:destination="@id/eleventhFragment" />
+        <action
+            android:id="@+id/tenthToNinth"
+            app:destination="@id/ninthFragment" />
+        <action
+            android:id="@+id/tenthToFirst"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eleventhFragment"
+        android:name="com.example.test.EleventhFragment"
+        android:label="fragment_eleventh"
+        tools:layout="@layout/fragment_eleventh" >
+        <action
+            android:id="@+id/eleventhToTwelth"
+            app:destination="@id/twelthFragment" />
+        <action
+            android:id="@+id/eleventhToTenth"
+            app:destination="@id/tenthFragment" />
+        <action
+            android:id="@+id/eleventhToFirst"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/twelthFragment"
+        android:name="com.example.test.TwelthFragment"
+        android:label="fragment_twelth"
+        tools:layout="@layout/fragment_twelth" >
+        <action
+            android:id="@+id/twelthToFirst"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/twelthToEleventh"
+            app:destination="@id/eleventhFragment" />
     </fragment>
 </navigation>
