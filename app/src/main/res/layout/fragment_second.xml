@@ -10,14 +10,14 @@
         android:id="@+id/textview_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        app:layout_constraintBottom_toTopOf="@id/button_second_previous"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_second"
+        android:id="@+id/button_second_previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="512dp"
@@ -26,4 +26,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_second" />
+
+    <Button
+        android:id="@+id/button_second_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Screen 2"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="155dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
