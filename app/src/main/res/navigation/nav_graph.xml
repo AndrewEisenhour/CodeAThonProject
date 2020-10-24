@@ -106,6 +106,9 @@
         <action
             android:id="@+id/eighthToNinth"
             app:destination="@id/ninthFragment" />
+        <action
+            android:id="@+id/eighthToFirst"
+            app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
         android:id="@+id/ninthFragment"

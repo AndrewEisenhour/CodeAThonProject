@@ -44,5 +44,12 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.firstToFifth);
             }
         });
+        view.findViewById(R.id.button_peppermint).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.firstToEighth);
+            }
+        });
     }
 }
