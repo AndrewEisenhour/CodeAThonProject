@@ -20,6 +20,9 @@
         <action
             android:id="@+id/firstToEighth"
             app:destination="@id/eighthFragment" />
+        <action
+            android:id="@+id/firstToTips2"
+            app:destination="@id/tipsFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -166,5 +169,14 @@
         <action
             android:id="@+id/twelthToEleventh"
             app:destination="@id/eleventhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.example.test.TipsFragment"
+        android:label="fragment_tips2"
+        tools:layout="@layout/fragment_tips2" >
+        <action
+            android:id="@+id/tipsToFirst2"
+            app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
