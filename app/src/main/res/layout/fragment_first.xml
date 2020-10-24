@@ -10,12 +10,12 @@
         android:id="@+id/textview_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please help"
+        android:text="Welcome to the App"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@id/morning_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Please help" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/morning_test"
@@ -41,7 +41,7 @@
         android:id="@+id/gentle_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gentle Sniff"
+        android:text="Gentle Sniff Test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/night_test" />
@@ -50,8 +50,7 @@
         android:id="@+id/button_peppermint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Peppermint and Chai"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Peppermint and Chai Test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gentle_test" />
@@ -63,4 +62,17 @@
         android:text="Tips"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:gravity="center|center_vertical"
+        android:inputType="textPersonName"
+        android:text="Smells nice today"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
 </androidx.constraintlayout.widget.ConstraintLayout>
