@@ -26,7 +26,21 @@ public class ThirdFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(ThirdFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.thirdToSecond);
+            }
+        });
+        view.findViewById(R.id.button_third_next).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ThirdFragment.this)
+                        .navigate(R.id.thirdToFourth);
+            }
+        });
+        view.findViewById(R.id.button_third_home).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(ThirdFragment.this)
+                        .navigate(R.id.thirdToHome);
             }
         });
     }
