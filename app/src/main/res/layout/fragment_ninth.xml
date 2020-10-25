@@ -12,6 +12,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#000000"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-136dp" />
 
@@ -19,11 +20,15 @@
         android:id="@+id/editTextTextPersonName8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Inhale"
+        android:text="Step Two: Inhale"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
@@ -48,18 +53,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Home"
+        app:backgroundTint="#37E4E2E2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="205dp"
-        android:layout_height="42dp"
-        android:text="Inhale the peppermint smell deeply"
-        android:textSize="18sp"
+        android:layout_width="305dp"
+        android:layout_height="73dp"
+        android:gravity="center_horizontal"
+        android:text="Deeply inhale the peppermint for ten seconds."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="189dp"
+        android:layout_height="256dp"
+        android:src="@drawable/peppermint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.309" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
