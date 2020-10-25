@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
 
     <Button
         android:id="@+id/button_third_previous"
@@ -36,7 +36,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
         android:text="Home"
-        app:backgroundTint="#E4E2E2"
+        app:backgroundTint="#37E4E2E2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,68 +44,72 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Step 2: Inhale...Exhale"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="214dp"
-        android:layout_height="203dp"
-        android:text="Lift each scented object to your face, right under your nose and inhale deeply for 10 seconds. Remember what the scent used to smell like when inhaling."
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:layout_width="330dp"
+        android:layout_height="83dp"
+        android:gravity="center_horizontal"
+        android:text="Inhale each scented object deeply for 10 seconds."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="122dp"
-        android:layout_height="218dp"
+        android:layout_width="223dp"
+        android:layout_height="291dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView16"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263"
+        app:layout_constraintVertical_bias="0.3"
         app:srcCompat="@drawable/smellone" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="133dp"
-        android:layout_height="204dp"
-        android:layout_marginBottom="112dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/window" />
-
     <TextView
-        android:id="@+id/eliselabeltextviewfragmenttwo"
-        android:layout_width="208dp"
-        android:layout_height="194dp"
-        android:text="Take a 15 second break between scents and focus on what you just smelled and think about if you noticed anything, and if so, how it related to what you used to smell."
-        android:textColor="#000000"
-        android:textSize="18sp"
+        android:id="@+id/textView20"
+        android:layout_width="330dp"
+        android:layout_height="86dp"
+        android:gravity="center_horizontal"
+        android:text="Think about what your scented objects used to smell like."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="346dp"
+        android:layout_height="74dp"
+        android:gravity="center_horizontal"
+        android:text="Take 15 second breaks betweeen testing each object."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

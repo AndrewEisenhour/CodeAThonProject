@@ -4,52 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".FirstFragment">
 
     <Button
         android:id="@+id/morning_test"
-        android:layout_width="92dp"
-        android:layout_height="93dp"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
 
+        android:background="#000000"
         android:foreground="@drawable/sunrise"
         android:text="Start Morning Test"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/night_test"
-        app:layout_constraintHorizontal_bias="0.309"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
-
-    <Button
-        android:id="@+id/night_test"
-        android:layout_width="95dp"
-        android:layout_height="92dp"
-        android:layout_marginBottom="84dp"
-        android:foreground="@drawable/cloudynight"
-        android:text="Start Night Test"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button_peppermint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/gentle_test"
-        android:layout_width="91dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="84dp"
-        android:foreground="@drawable/rosemary"
-        android:text="Gentle Sniff"
-        app:backgroundTint="#FFFFFF"
+        android:textColor="#00FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorHint="#00FFFFFF"
+        android:textColorLink="#00FFFFFF"
+        app:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/morning_test"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <Button
+        android:id="@+id/night_test"
+        android:layout_width="105dp"
+        android:layout_height="106dp"
+        android:foreground="@drawable/cloudynight"
+        android:text="Start Night Test"
+        android:textColor="#00FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorHint="#00FFFFFF"
+        android:textColorLink="#00FFFFFF"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <Button
+        android:id="@+id/gentle_test"
+        android:layout_width="107dp"
+        android:layout_height="114dp"
+        android:foreground="@drawable/rosemary"
+        android:text="Gentle Sniff"
+        android:textColor="#00FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorHint="#00FFFFFF"
+        android:textColorLink="#00FFFFFF"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
 
     <Button
         android:id="@+id/button_peppermint"
@@ -57,10 +69,14 @@
         android:layout_height="104dp"
         android:foreground="@drawable/peppermint"
         android:text="Peppermint and Chai"
-        app:backgroundTint="#FFFFFF"
+        android:textColor="#00FFFFFF"
+        android:textColorHighlight="#00FFFFFF"
+        android:textColorHint="#00FFFFFF"
+        android:textColorLink="#00FFFFFF"
+        app:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.66" />
@@ -69,13 +85,13 @@
         android:id="@+id/Tips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
         android:text="Tips"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.963" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -87,4 +103,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="659dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
