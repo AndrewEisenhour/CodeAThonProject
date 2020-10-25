@@ -7,9 +7,14 @@
     tools:context=".EighthFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-80dp" />
 
     <Button
         android:id="@+id/button_eighth_next"
@@ -34,20 +39,65 @@
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Gather Ingredient"
+        android:text="Step One: Gather Objects"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="312dp"
-        android:layout_height="34dp"
-        android:text="Gather some peppermint and chai"
-        android:textSize="18sp"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
+        android:gravity="center_horizontal"
+        android:text="Gather peppermint and chai."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="124dp"
+        android:layout_height="131dp"
+        android:src="@drawable/chai"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="140dp"
+        android:layout_height="155dp"
+        android:src="@drawable/peppermint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="345dp"
+        android:layout_height="121dp"
+        android:gravity="center_horizontal"
+        android:text="Ensure that the peppermint and chai are in two separate containers."
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
